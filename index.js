@@ -11,6 +11,7 @@ import {
   Picker,
   View
 } from 'react-native';
+import PropTypes from 'prop-types'
 
 export default class Select extends React.Component {
   constructor(props) {
@@ -121,11 +122,11 @@ export default class Select extends React.Component {
 }
 
 Select.propTypes = {
-  options: React.PropTypes.object,
-  selectedKey: React.PropTypes.string,
+  options: PropTypes.object,
+  selectedKey: PropTypes.string,
   labelStyle: Text.propTypes.style,
-  onChange: React.PropTypes.func,
-  placeholder: React.PropTypes.string,
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
 };
 
 Select.defaultProps = {
